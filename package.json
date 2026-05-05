@@ -1,10 +1,11 @@
 {
-  "name": "pi-prior-plugin",
+  "name": "pi-prior",
   "version": "0.1.0",
   "description": "Pi extension for project-local learned context priors.",
   "keywords": ["pi-package", "pi-extension", "learned-prior"],
   "license": "MIT",
   "type": "module",
+  "files": ["index.ts"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pokutta/pi-prior-plugin.git"

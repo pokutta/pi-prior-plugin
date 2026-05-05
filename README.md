@@ -125,36 +125,53 @@ The package manifest registers the extension for Pi:
 
 ## Installation and registration
 
-### Recommended: install globally from GitHub
+### Recommended: install globally from npm
 
 Use this when you want `pi-prior` available in all projects:
 
 ```bash
-pi install https://github.com/pokutta/pi-prior-plugin.git
+pi install npm:pi-prior
 ```
 
 This installs the extension into Pi's global package configuration. The plugin
 code is global, but the learned prior state remains per-project in `.pi/prior/`.
-The public instructions use HTTPS so readers do not need GitHub SSH keys; SSH
-URLs are still fine for private forks or maintainer remotes.
 
 After installation, restart Pi or run `/reload` in an existing Pi session.
 
-### Project-local install from GitHub
+### Project-local install from npm
 
 Use this when only one project should load the plugin:
 
 ```bash
-pi install -l https://github.com/pokutta/pi-prior-plugin.git
+pi install -l npm:pi-prior
 ```
 
 This writes the package source to the current project's `.pi/settings.json`. If
 you commit `.pi/settings.json`, teammates can get the same project extension
 configuration when Pi starts. Do not commit `.pi/prior/`.
 
+### GitHub install
+
+Use this if you want to install directly from the public GitHub repository rather
+than npm:
+
+```bash
+pi install https://github.com/pokutta/pi-prior-plugin.git
+pi install -l https://github.com/pokutta/pi-prior-plugin.git
+```
+
+The public GitHub instructions use HTTPS so readers do not need GitHub SSH keys;
+SSH URLs are still fine for private forks or maintainer remotes.
+
 ### Temporary one-run load
 
 Use this for a quick smoke test without changing settings:
+
+```bash
+pi -e npm:pi-prior
+```
+
+or load directly from GitHub:
 
 ```bash
 pi -e https://github.com/pokutta/pi-prior-plugin.git
