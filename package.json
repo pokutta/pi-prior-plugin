@@ -1,0 +1,24 @@
+{
+  "name": "pi-prior-plugin",
+  "version": "0.1.0",
+  "description": "Pi extension for project-local learned context priors.",
+  "keywords": ["pi-package", "pi-extension", "learned-prior"],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pokutta/pi-prior-plugin.git"
+  },
+  "homepage": "https://github.com/pokutta/pi-prior-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/pokutta/pi-prior-plugin/issues"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}

@@ -1,0 +1,7 @@
+# Pi runtime state may contain prompts, traces, scores, and private context.
+# Keep it out of public repositories unless you intentionally add narrow exceptions.
+.pi/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
