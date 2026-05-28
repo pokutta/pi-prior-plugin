@@ -1,6 +1,6 @@
 {
   "name": "pi-prior",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pi extension for project-local learned context priors.",
   "keywords": ["pi-package", "pi-extension", "learned-prior"],
   "license": "MIT",
@@ -18,8 +18,19 @@
     "extensions": ["./index.ts"]
   },
   "peerDependencies": {
-    "@mariozechner/pi-ai": "*",
-    "@mariozechner/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
     "typebox": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-ai": {
+      "optional": true
+    },
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "typebox": {
+      "optional": true
+    }
   }
 }
